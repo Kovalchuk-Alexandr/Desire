@@ -1,0 +1,39 @@
+.cta {
+    padding: 170px 0 156px;
+    margin-bottom: 79px;
+
+    min-height: 616px;
+
+    background-image: url('./../../img/cta/cta-bg-masked.jpg');
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+    &__content {
+        max-width: 540px;
+    }
+
+    &__title {
+        position: relative;
+        padding-bottom: 22px;
+        margin-bottom: 21px;
+
+        @extend %title-font;
+        font-size: 60px;
+        line-height: 133%;
+        color: var(--color-scheme-dark-transparent);
+
+        @include line{
+            left: 0;
+            transform: translateX(0);
+        }
+    }
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        color: var(--color-default);
+    }
+}

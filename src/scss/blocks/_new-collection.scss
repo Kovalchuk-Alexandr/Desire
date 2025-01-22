@@ -1,0 +1,116 @@
+.new-collection {
+    padding-block: 16px 104px;
+    text-align: center;
+    
+    &__content {
+        max-width: 730px;
+        width: 100%;
+
+        margin: 0 auto 27px;
+    }
+    &__title {
+        margin-bottom: 24px;
+        padding-bottom: 25px;
+
+        position: relative;
+        // font-family: var(--second-family);
+        // font-weight: 700;
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 142%;
+        text-align: center;
+        color: var(--color-scheme-dark-transparent);
+
+        @include line {width: 252px;}
+
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     bottom: 0;
+        //     // margin: 0 auto;
+        //     // left: 0;
+        //     // right: 0;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+
+        //     width: 252px;
+        //     height: 1px;
+        //     background: #6d7278;
+        // }
+    }
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 169%;
+        color: var(--color-default);
+    }
+}
+
+.collection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    &__item {
+        position: relative;
+        // transition: all 0.3s ease-in;
+
+        &:hover .collection__info {
+            opacity: 1;
+        }
+        
+    }
+
+    &__img {
+        max-height: 350px;
+        object-fit: cover;
+    }
+
+    &__info {
+        position: absolute;
+        // left: 50%;
+        // top: 50%;
+        // transform: translate(-50%, -50%);
+        // width: 230px;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #ffffff99;
+
+        opacity: 0;
+        transition: all 0.3s ease-in;
+
+        &-title {
+            position: relative;
+            margin-bottom: 19px;
+            padding-bottom: 19px;
+            // font-family: var(--second-family);
+            // font-weight: 700;
+            @extend %title-font;
+            font-size: 20px;
+            text-align: center;
+            color: var(--color-scheme-dark-transparent);
+
+            @include line {width: 80%;} 
+        }
+
+        &-text {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 200%;
+            color: var(--text-muted);
+        }
+        
+    }
+    
+}

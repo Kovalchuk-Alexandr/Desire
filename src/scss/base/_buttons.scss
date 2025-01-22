@@ -1,0 +1,29 @@
+// .gallery__btn,
+// .gallery__btn:active,
+// .gallery__btn:focus { outline: 1px solid var(--color-border-muted) ;}
+
+.gallery__btn {
+    padding: 6px 16px;
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 200%;
+    text-align: center;
+    color: #8f8d8d;
+
+    outline: 1px solid var(--color-border-muted) ;
+    border-radius: 20px;
+    height: 40px;
+    // width: 160px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+    &--active,
+    &:hover {
+        border: none;
+        outline: none;
+        background: #ffee3580;
+        color: var(--color-default);
+    }
+}

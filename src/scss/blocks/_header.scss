@@ -1,0 +1,36 @@
+.header {
+	padding-block: 44px;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.menu {
+	padding-inline: 35px 60px;
+
+	&__list {
+		display: flex;
+		gap: 80px;
+	}
+
+	&__list-link {
+		@extend %title-font;
+		// font-family: var(--second-family);
+		// font-weight: 700;
+		font-size: 16px;
+		line-height: 137%;
+		text-align: center;
+		color:var(--link-color);
+	}
+}
+
+.logo {margin: 0 auto; flex-shrink: 0;}
+
+.header__nav {
+	@include tablet {
+		display: none;
+	}
+}
