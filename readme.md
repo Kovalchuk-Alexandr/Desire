@@ -1,16 +1,13 @@
-# Elegant Store - GULP - mobile
+# Desire - GULP - mobile
 
-<<<<<<< HEAD
-## Cайт интернет магазина. Главная страница с каталогом товаров. Верстка на Gulp сборке. HTML, SCSS, JS, Swiper slider. Мобильная адаптация.
-=======
-## Cайт интернет магазина. Главная страница с каталогом товаров.  Верстка на Gulp сборке. HTML, SCSS, JS, Swiper slider. Мобильная адаптация.
->>>>>>> 561da122d8449c8e239889d6499e9223a4f3de68
+## Верстка шести-страничного сайта на Gulp сборке. HTML, SCSS, JS, slick-carousel slider, mixItUP. Мобильная адаптация.
 
 - HTML,
 - SCSS,
 - Gulp,
 - JS,
-- Swiper slider
+- Slick-carousel slider
+- mixItUP - манипуляция, фильтр, сортировка DOM
 - Мобильная адаптация
 
 Установить зависимости:
@@ -28,4 +25,4 @@ gulp
 gulp docs
 ```
 
-[Смотреть демо](https://kovalchuk-alexandr.github.io/Elegant-Store---GULP---mobile/)
+[Смотреть демо](https://kovalchuk-alexandr.github.io/Desire/)
