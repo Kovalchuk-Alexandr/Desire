@@ -1,6 +1,6 @@
 # Desire - GULP - mobile
 
-## Верстка шести-страничного сайта на Gulp сборке. HTML, SCSS, JS, slick-carousel slider, mixItUP. Мобильная адаптация.
+## Верстка шестистраничного сайта на Gulp сборке. HTML, SCSS, JS, slick-carousel slider, mixItUP. Мобильная адаптация.
 
 - HTML,
 - SCSS,

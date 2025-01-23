@@ -21,8 +21,8 @@
 
     &--active,
     &:hover {
-        border: none;
-        outline: none;
+        border: #ffee3580;
+        outline: #ffee3580;
         background: #ffee3580;
         color: var(--color-default);
     }

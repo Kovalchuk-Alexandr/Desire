@@ -27,6 +27,8 @@
         align-items: center;
     }
 
+    .mobile-nav-btn {display: none;}
+
 	.mobile-close-btn {
 		position: absolute;
 		top: 20px;
@@ -137,6 +139,9 @@
         right: 0;
 		opacity: 1;
     }
+
+    .mobile-nav-btn {display: block;}
+
 	.mobile-nav-fade--open {
 		pointer-events: all;
 		opacity: 1;
