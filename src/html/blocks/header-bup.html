@@ -4,10 +4,20 @@
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__list-item">
-                        <a class="menu__list-link @@if(context.activePage === 'about') {@@menuActive}" href="./../about.html">About</a>
+                        <!-- @@if(activePage === 'about') { -->
+                            <a class="menu__list-link @@menuActive" href="./../about.html">About</a>
+                        <!-- }  -->
+                        <!-- @@if(activePage !== 'about') {
+                            <a class="menu__list-link" href="./../about.html">About</a>
+                        } -->
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__list-link @@if(context.activePage === 'gallery') {@@menuActive}" href="./../gallery.html">Gallery</a>
+                        @@if(activePage === 'gallery') {
+                            <a class="menu__list-link @@menuActive" href="./../about.html">Gallery</a>
+                        } 
+                        @@if(activePage !== 'gallery') {
+                            <a class="menu__list-link" href="./../about.html">Gallery</a>
+                        }
                         <!-- <a class="menu__list-link" href="#!">Gallery</a> -->
                     </li>
                 </ul>
@@ -20,12 +30,10 @@
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__list-item">
-                        <a class="menu__list-link @@if(context.activePage === 'blog') {@@menuActive}" href="./../gallery.html">Blog</a>
-                        <!-- <a class="menu__list-link" href="#!">Blog</a> -->
+                        <a class="menu__list-link" href="#!">Blog</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__list-link @@if(context.activePage === 'contact') {@@menuActive}" href="./../gallery.html">Contact</a>
-                        <!-- <a class="menu__list-link" href="#!">Contact</a> -->
+                        <a class="menu__list-link" href="#!">Contact</a>
                     </li>
                 </ul>
             </nav>

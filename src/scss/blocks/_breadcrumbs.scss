@@ -1,0 +1,22 @@
+.breadcrumbs {
+    padding-block: 14px;
+    background: #dfdfdf80;
+
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 6px;
+    }
+    &__item + &__item::before {
+        content: "/";
+    }
+    &__link {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 200%;
+        color: var(--color-default);
+    }
+    
+}

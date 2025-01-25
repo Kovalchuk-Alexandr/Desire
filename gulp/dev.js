@@ -39,12 +39,12 @@ const fileIncludeSetting = {
 
 const plumberNotify = (title) => {
 	return {
-		errorHandler: notify.onError({
-			title: title,
-			message: 'Error <%= error.message %>',
-			sound: false,
-		}),
-	};
+        errorHandler: notify.onError({
+            title: title + " Error: ",
+            message: "Error: <%= error.message %>",
+            sound: false,
+        }),
+    };
 };
 
 gulp.task('html:dev', function () {

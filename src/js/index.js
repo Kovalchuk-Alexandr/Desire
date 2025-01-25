@@ -23,17 +23,28 @@ import mixitup from "mixitup";
 
 /*Creating a mixer instance with an element reference*/
 var containerEl = document.querySelector(".gallery__inner");
-var mixer = mixitup(containerEl, {
-    classNames: {
-        block: "gallery",               // название кастомного блока
-        elementFilter: "btn",           // название кастомного элемента
-        delineatorElement: "__",        // разделитель элемента
-        delineatorModifier: "--",       // разделитель модификатора
-    },
-    load: {
-        filter: ".category-living",     // активный таб при загрузке
-    },
-    // selectors: {
-    //     control: ".gallery__btn",
-    // },
-});
+
+if (containerEl) {
+    var mixer = mixitup(containerEl, {
+        classNames: {
+            block: "gallery", // название кастомного блока
+            elementFilter: "btn", // название кастомного элемента
+            delineatorElement: "__", // разделитель элемента
+            delineatorModifier: "--", // разделитель модификатора
+        },
+        load: {
+            filter: ".category-living", // активный таб при загрузке
+        },
+        // selectors: {
+        //     control: ".gallery__btn",
+        // },
+    });
+}
+// const menuListLink = document.querySelectorAll(".menu__list-link");
+// console.log("menuListLink: ");
+// console.log(menuListLink);
+// console.log(`URI: ${document.documentURI}`);
+// console.log(`URL: ${document.title}`);
+
+
+
