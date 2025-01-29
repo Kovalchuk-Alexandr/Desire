@@ -56,11 +56,26 @@
             transform: translateX(-50%);
 
             width: 200px;
-			@content;
             height: 1px;
             background: #6d7278;
+			@content;
         }
 }
+
+@mixin progress {
+    &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 70%;
+                @content;
+
+                background-color: var(--color-black);
+            }
+}
+
 @mixin marker {
 	&::before {
             content: '';

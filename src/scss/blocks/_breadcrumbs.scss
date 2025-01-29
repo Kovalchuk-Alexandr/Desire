@@ -6,11 +6,15 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        gap: 6px;
+        // gap: 6px;
+        // &:last-child:hover  {cursor: none;}
     }
     &__item + &__item::before {
         content: "/";
     }
+
+    &__item:last-child &__link {cursor: default;}
+
     &__link {
         font-family: var(--font-family);
         font-weight: 400;

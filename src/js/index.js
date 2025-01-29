@@ -1,10 +1,16 @@
 // Галерея и лайтбоксы от Fancybox
-// import { Fancybox } from '@fancyapps/ui';
-// import '@fancyapps/ui/dist/fancybox/fancybox.css';
+import { Fancybox } from '@fancyapps/ui';
+import '@fancyapps/ui/dist/fancybox/fancybox.css';
 
-// Fancybox.bind('[data-fancybox]', {
-// 	// Your custom options
-// });
+// Проверка корректности установки Fancybox
+// const fancybox = document.querySelectorAll("[data-fancybox]");
+// console.log('fancybox :');
+// console.log(fancybox);
+// console.log(Fancybox);
+
+Fancybox.bind('[data-fancybox]', {
+	// Your custom options
+});
 
 import $ from "jquery";
 import "slick-carousel";
