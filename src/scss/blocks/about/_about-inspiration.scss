@@ -85,7 +85,16 @@
             &--design {@include progress {width: 80%;}}
             &--mesurments {@include progress {width: 70%;}}
             &--furniture {@include progress {width: 75%;}}
-            &--interior {@include progress {width: 40%;}}
+            // &--interior {@include progress {width: 40%;}}
+            &--rate {
+                position: absolute;
+
+                top: 0;
+                left: 0;
+                bottom: 0;
+
+                background-color: var(--color-black);
+            }
         }
     }
 }

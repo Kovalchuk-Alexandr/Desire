@@ -1,0 +1,11 @@
+.about-partners {
+    margin-bottom: 54px;
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}

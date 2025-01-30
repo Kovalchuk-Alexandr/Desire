@@ -1,6 +1,8 @@
 .new-collection {
     padding-block: 16px 104px;
     text-align: center;
+
+    &--about {padding-block: 0 72px;}
     
     &__content {
         max-width: 730px;

@@ -64,16 +64,16 @@
 
 @mixin progress {
     &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                bottom: 0;
-                width: 70%;
-                @content;
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        // width: 70%;
+        @content;
 
-                background-color: var(--color-black);
-            }
+        background-color: var(--color-black);
+    }
 }
 
 @mixin marker {
