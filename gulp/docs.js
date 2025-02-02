@@ -128,33 +128,51 @@ gulp.task('sass:docs', function () {
 });
 
 gulp.task('images:docs', function () {
-	return (
-        gulp
-            .src(["./src/img/**/*.*", "!./src/img/svgicons/**/*.*"])
-            .pipe(changed("./docs/img/"))
-            .pipe(
-                imagemin([
-                    imageminWebp({
-                        quality: 85,
-                    }),
-                ])
+	return gulp
+        .src([
+            // "./src/img/**/*.*",
+            "./src/img/**/*.jpg",
+            "./src/img/**/*.png",
+            "./src/img/**/*.gif",
+            "./src/img/**/*.webp",
+            "!./src/img/**/*.arj",
+            "!./src/img/**/*.zip",
+            "!./src/img/svgicons/**/*.*",
+        ])
+        .pipe(changed("./docs/img/"))
+        .pipe(
+            imagemin([
+                imageminWebp({
+                    quality: 85,
+                }),
+            ])
+        )
+        .pipe(rename({ extname: ".webp" }))
+        .pipe(gulp.dest("./docs/img/"))
+        .pipe(
+            gulp.src([
+                // "./src/img/**/*.*",
+                "./src/img/**/*.jpg",
+                "./src/img/**/*.png",
+                "./src/img/**/*.gif",
+                "./src/img/**/*.webp",
+                "!./src/img/**/*.arj",
+                "!./src/img/**/*.zip",
+                "!./src/img/svgicons/**/*.*"
+			])
+		)
+        .pipe(changed("./docs/img/"))
+        .pipe(
+            imagemin(
+                [
+                    imagemin.gifsicle({ interlaced: true }),
+                    imagemin.mozjpeg({ quality: 85, progressive: true }),
+                    imagemin.optipng({ optimizationLevel: 5 }),
+                ],
+                { verbose: true }
             )
-            .pipe(rename({ extname: ".webp" }))
-            .pipe(gulp.dest("./docs/img/"))
-            .pipe(gulp.src("./src/img/**/*.*"))
-            .pipe(changed("./docs/img/"))
-            .pipe(
-                imagemin(
-                    [
-                        imagemin.gifsicle({ interlaced: true }),
-                        imagemin.mozjpeg({ quality: 85, progressive: true }),
-                        imagemin.optipng({ optimizationLevel: 5 }),
-                    ],
-                    { verbose: true }
-                )
-            )
-            .pipe(gulp.dest("./docs/img/"))
-    );
+        )
+        .pipe(gulp.dest("./docs/img/"));
 });
 
 const svgStack = {

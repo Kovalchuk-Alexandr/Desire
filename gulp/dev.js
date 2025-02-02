@@ -114,23 +114,43 @@ gulp.task('sass:dev', function () {
 
 gulp.task('images:dev', function () {
 	return (
-		gulp
-			.src(['./src/img/**/*.*', '!./src/img/svgicons/**/*.*'])
-			.pipe(changed('./build/img/'))
-			.pipe(
-				imagemin([
-					imageminWebp({
-						quality: 85,
-					}),
-				])
-			)
-			.pipe(rename({ extname: '.webp' }))
-			.pipe(gulp.dest('./build/img/'))
-			.pipe(gulp.src(['./src/img/**/*.*', './src/img/svgicons/**/*.*']))
-			.pipe(changed('./build/img/'))
-			// .pipe(imagemin({ verbose: true }))
-			.pipe(gulp.dest('./build/img/'))
-	);
+        gulp
+            .src([
+                // './src/img/**/*.*',
+                "./src/img/**/*.jpg",
+                "./src/img/**/*.png",
+                "./src/img/**/*.gif",
+                "./src/img/**/*.webp",
+                "!./src/img/**/*.arj",
+                "!./src/img/**/*.zip",
+                "!./src/img/svgicons/**/*.*",
+            ])
+            .pipe(changed("./build/img/"))
+            .pipe(
+                imagemin([
+                    imageminWebp({
+                        quality: 85,
+                    }),
+                ])
+            )
+            .pipe(rename({ extname: ".webp" }))
+            .pipe(gulp.dest("./build/img/"))
+            .pipe(
+                gulp.src([
+                    // './src/img/**/*.*',
+                    "./src/img/**/*.jpg",
+                    "./src/img/**/*.png",
+                    "./src/img/**/*.gif",
+                    "./src/img/**/*.webp",
+                    "!./src/img/**/*.arj",
+                    "!./src/img/**/*.zip",
+                    "!./src/img/svgicons/**/*.*",
+                ])
+            )
+            .pipe(changed("./build/img/"))
+            // .pipe(imagemin({ verbose: true }))
+            .pipe(gulp.dest("./build/img/"))
+    );
 });
 
 const svgStack = {

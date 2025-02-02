@@ -1,4 +1,4 @@
-.breadcrumbs {background-color: transparent;}
+
 .about-header{
     position: relative;
     margin-bottom: 98px;
@@ -9,6 +9,8 @@
     background-position: center center; /* x y */
     background-size: cover;
     background-repeat: no-repeat;
+
+    & .breadcrumbs {background-color: transparent;}
     
     &__title {
         position: absolute;
