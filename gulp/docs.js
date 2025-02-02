@@ -131,15 +131,8 @@ gulp.task('images:docs', function () {
 	return gulp
         .src([
             // "./src/img/**/*.*",
-            "./src/img/**/*.jpg",
-            "./src/img/**/*.png",
-            "./src/img/**/*.gif",
-            // "./src/img/**/*.svg",
-            // "./src/img/**/*.mp3",
-            // "./src/img/**/*.mp4",
-            // "./src/img/**/*.webp",
-            "!./src/img/**/*.arj",
-            "!./src/img/**/*.zip",
+            "./src/img/**/*.{jpg,png,gif}",
+            "!./src/img/**/*.{arj,zip}",
             "!./src/img/svgicons/**/*.*",
         ])
         .pipe(changed("./docs/img/"))
@@ -155,16 +148,8 @@ gulp.task('images:docs', function () {
         .pipe(
             gulp.src([
                 "./src/img/**/*.*",
-                // "./src/img/**/*.jpg",
-                // "./src/img/**/*.png",
-                // "./src/img/**/*.gif",
-                // "./src/img/**/*.svg",
-                // "./src/img/**/*.mp3",
-                // "./src/img/**/*.mp4",
-                // "./src/img/**/*.webp",
-                "!./src/img/**/*.arj",
-                "!./src/img/**/*.zip",
-                "!./src/img/svgicons/**/*.*",
+                 "!./src/img/**/*.{arj,zip}",
+                 "!./src/img/svgicons/**/*.*",
             ])
         )
         .pipe(changed("./docs/img/"))
