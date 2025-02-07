@@ -27,3 +27,19 @@
         color: var(--color-default);
     }
 }
+
+.btn {
+    min-width: 160px;
+    height: 40px;
+    padding: 6px 12px;
+    
+    border-radius: 21px;
+    background: var(--color-scheme-dark-transparent);
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+    color: #fffff0;
+}

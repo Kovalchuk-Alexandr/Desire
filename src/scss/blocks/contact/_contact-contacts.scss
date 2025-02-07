@@ -1,0 +1,104 @@
+.contact-contacts {margin-bottom: 101px;}
+
+.contacts {
+
+    &__title {
+        position: relative;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+
+        @extend %title-font;
+        // font-family: var(--second-family);
+        // color: var(--color-scheme-dark-transparent);
+        // font-weight: 700;
+        font-size: 36px;
+        line-height: 167%;
+
+        @include line{
+            left: 0;
+            transform: none;
+            height: 2px;
+        }
+    }
+
+    &__content {
+        max-width: 825px;
+        margin-left: auto;
+
+        & .info-email {margin-bottom: 24px;}
+    }
+
+    &__social {
+        margin-bottom: 20px;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 36px;
+        
+        // &-item {height: 18px; width: 18px;}
+    }
+
+    &__text {
+        margin-bottom: 10px;
+
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        color: var(--color-inverse);
+    }
+
+    &__address {
+        margin-bottom: 16px;
+
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 169%;
+        color: var(--color-default);
+    }
+
+    &__btn {min-width: 181px;}
+}
+
+.contacts__form {
+    &-data {
+        margin-bottom: 20px;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 13px 11px;
+    }
+    
+    &-input {
+        padding: 6px 16px;
+        border: 1px solid var(--bg-second);
+        border-radius: 20px;
+        max-width: 407px;
+        height: 40px;
+        
+    }
+
+    &-message {
+        width: 100%;
+        padding: 14px 16px;
+        grid-column: span 2;
+
+        border: 1px solid #dfdfdf;
+        border-radius: 24px;
+        max-width: 100%;
+        min-height: 125px;
+
+        resize: vertical;
+    }
+
+    &-input::placeholder,
+    &-message::placeholder {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        color: var(--color-inverse);
+    }
+}
