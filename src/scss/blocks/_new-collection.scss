@@ -92,17 +92,17 @@
         transition: all 0.3s ease-in;
 
         &-title {
-            position: relative;
-            margin-bottom: 19px;
-            padding-bottom: 19px;
-            // font-family: var(--second-family);
-            // font-weight: 700;
             @extend %title-font;
             font-size: 20px;
             text-align: center;
             color: var(--color-scheme-dark-transparent);
-
-            @include line {width: 80%;} 
+            
+            &--underline {
+                position: relative;
+                margin-bottom: 19px;
+                padding-bottom: 19px;
+                @include line {width: 80%;} 
+            }
         }
 
         &-text {

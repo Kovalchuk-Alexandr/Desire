@@ -15,6 +15,19 @@ function slickSlider() {
         // cssEase: "liner",
     });
 
+    $(".contact-slider").slick({
+        dots: true,
+        arrows: false,
+        slidesToShow: 10,
+        slidesToScroll: 5,
+        // fade: true,
+        // autoplay: true,
+        // autoplaySpeed: 4000,
+        draggable: true,
+        speed: 500
+        // cssEase: "liner",
+    });
+
 }
 
 export default slickSlider;

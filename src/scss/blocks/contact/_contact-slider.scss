@@ -1,0 +1,30 @@
+.section-contact-slider {margin-bottom: 100px;}
+
+.contact-slider {
+    & .slick-list {margin-bottom: 35px;}
+    
+    display: block;
+    & .collection {
+        gap: 18px;
+
+        &__img {max-height: 170px;}
+
+        &__info {
+            &-title {
+                font-family: var(--second-family);
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 137%;
+                text-align: center;
+                color: #363838e6;
+
+                text-wrap: wrap;
+            }
+        }
+    }
+}
+
+.contact-slide {
+    width: 170px;
+    padding-inline: 8px;
+}
