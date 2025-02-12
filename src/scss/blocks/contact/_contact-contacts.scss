@@ -25,15 +25,9 @@
         & .info-email {margin-bottom: 24px;}
     }
 
-    &__social {
+    &__social .social-list {
         margin-bottom: 20px;
-
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
         gap: 36px;
-        
-        // &-item {height: 18px; width: 18px;}
     }
 
     &__text {

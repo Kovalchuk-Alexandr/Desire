@@ -1,0 +1,8 @@
+.blog {
+    padding-block: 60px 65px;
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}

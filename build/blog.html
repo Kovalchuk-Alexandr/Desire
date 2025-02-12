@@ -7,7 +7,7 @@
 		<title>Desire</title>
 		<link rel="stylesheet" href="./css/main.css" />
 
-		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.png" />
 		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
 	</head>
 
@@ -22,7 +22,7 @@
 						<nav class="menu">
 							<ul class="menu__list">
 								<li class="menu__list-item">
-									<a class="menu__list-link menu__list-link--active" href="./about.html">About</a>
+									<a class="menu__list-link " href="./about.html">About</a>
 								</li>
 								<li class="menu__list-item">
 									<a class="menu__list-link " href="./gallery.html">Gallery</a>
@@ -42,7 +42,7 @@
 						<nav class="menu">
 							<ul class="menu__list">
 								<li class="menu__list-item">
-									<a class="menu__list-link " href="./blog.html">Blog</a>
+									<a class="menu__list-link menu__list-link--active" href="./blog.html">Blog</a>
 									<!-- <a class="menu__list-link" href="#!">Blog</a> -->
 								</li>
 								<li class="menu__list-item">
@@ -166,28 +166,113 @@
 								<a class="breadcrumbs__link" href="./index.html">Home</a>
 							</li>
 							<li class="breadcrumbs__item">
-								<a class="breadcrumbs__link" href="#!">About</a>
+								<a class="breadcrumbs__link" href="#!">Blog</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<section class="about-header">
-					<div class="breadcrumbs">
-						<div class="container">
-							<ul class="breadcrumbs__list">
-								<li class="breadcrumbs__item">
-									<a class="breadcrumbs__link" href="./index.html">Home</a>
-								</li>
-								<li class="breadcrumbs__item">
-									<a class="breadcrumbs__link" href="#!">About</a>
-								</li>
-							</ul>
-						</div>
-					</div>
 
-					<h2 class="visually-hidden">About Us</h2>
+				<section class="blog">
+					<h2 class="visually-hidden">title</h2>
 					<div class="container">
-						<h2 class="about-header__title">About&#160;Us</h2>
+						<div class="blog__grid">
+							<div class="blog__items"></div>
+							<aside class="aside">
+								<form class="aside__search">
+									<input type="text" class="aside__search-input" placeholder="Search" />
+									<button class="aside__search-btn" type="submit">
+										<img class="aside__search-btn-img" src="./img/blog/search.svg" alt="Search img" width="17" height="17" />
+									</button>
+								</form>
+
+								<div class="blog__category">
+									<h6 class="blog__category-title blog-title">Categories</h6>
+									<ul class="blog__category-list">
+										<li class="blog__category-item"><a class="blog__category-link" href="#!">Dining room (1)</a></li>
+										<li class="blog__category-item"><a class="blog__category-link" href="#!">Office furniture (12)</a></li>
+										<li class="blog__category-item"><a class="blog__category-link" href="#!">Simple interiror design (2)</a></li>
+										<li class="blog__category-item"><a class="blog__category-link" href="#!">Design (4)</a></li>
+										<li class="blog__category-item"><a class="blog__category-link" href="#!">Bedroom Furniture (1)</a></li>
+									</ul>
+								</div>
+
+								<!-- Recent posts -->
+								<div class="recent-posts">
+									<h6 class="recent-posts__title blog-title">Recent Posts</h6>
+									<ul class="recent-posts__list">
+										<li class="recent-posts__item">
+											<a class="recent-posts__text" href="#!">
+												Cred selfies edison bulb four dollar toast humblebrag
+											</a>
+											<div class="recent-posts-wrapper">
+												<span class="recent-posts__date">August 10, 2020</span> |
+												<a class="recent-posts__author" href="#!">by&#160;Ann Summers</a>
+											</div>
+										</li>
+										<li class="recent-posts__item">
+											<a class="recent-posts__text" href="#!">
+												Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth
+											</a>
+											<div class="recent-posts-wrapper">
+												<span class="recent-posts__date">September 30,2020</span> |
+												<a class="recent-posts__author" href="#!">by&#160;Ann Summers</a>
+											</div>
+										</li>
+										<li class="recent-posts__item">
+											<a class="recent-posts__text" href="#!">
+												Cred selfies edison bulb four dollar toast humblebrag
+											</a>
+											<div class="recent-posts-wrapper">
+												<span class="recent-posts__date">May 2, 2020</span> |
+												<a class="recent-posts__author" href="#!">by&#160;Ann Summers</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<!-- Tags -->
+								<div class="blog__tags">
+									<h6 class="blog__tags-title blog-title">Tags</h6>
+									<div class="blog__tags-wrapper">
+										<a class="blog__tags-link" href="#!">Dining room futniture</a>
+										<a class="blog__tags-link" href="#!">Chair</a>
+										<a class="blog__tags-link" href="#!">Table</a>
+										<a class="blog__tags-link" href="#!">Bedroom</a>
+										<a class="blog__tags-link" href="#!">Office Furniture</a>
+									</div>
+								</div>
+
+								<div class="blog__social">
+									<ul class="social-list">
+										<li class="social-item">
+											<a href="#!" class="social-link">
+												<img class="social-img" src="./img/social/facebook.svg" alt="Facebook img" />
+											</a>
+										</li>
+										<li class="social-item">
+											<a href="#!" class="social-link">
+												<img class="social-img" src="./img/social/instagram.svg" alt="Instagram img" />
+											</a>
+										</li>
+										<li class="social-item">
+											<a href="#!" class="social-link">
+												<img class="social-img" src="./img/social/pinterest.svg" alt="Pinterest img" />
+											</a>
+										</li>
+										<li class="social-item">
+											<a href="#!" class="social-link">
+												<img class="social-img" src="./img/social/whatsapp.svg" alt="Whatsapp img" />
+											</a>
+										</li>
+										<li class="social-item">
+											<a href="#!" class="social-link">
+												<img class="social-img" src="./img/social/youtube.svg" alt="Youtube img" />
+											</a>
+										</li>
+									</ul>
+								</div>
+							</aside>
+						</div>
 					</div>
 				</section>
 			</main>

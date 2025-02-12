@@ -8,7 +8,7 @@
 	<title>Desire</title>
 	<link rel="stylesheet" href="./css/main.css" />
 
-	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
 </head>
 
@@ -17,12 +17,21 @@
 	<div class="mobile-nav-fade"></div>
 
 	<div class="wrapper">
-		@@include('blocks/header.html', {"activePage": "about", "menuActive": "menu__list-link--active"})
+		@@include('blocks/header.html', {"activePage": "blog", "menuActive": "menu__list-link--active"})
 		<!-- @@include('blocks/header.html', {"activePage": "contact", "menuActive": "menu__list-link--active"}) -->
 		@@include('blocks/mobile-nav.html')
 		<main class="main">
-			@@include('blocks/breadcrumbs.html', {"activePageName": "About"})
-			@@include('blocks/about/about-header.html')
+			@@include('blocks/breadcrumbs.html', {"activePageName": "Blog"})
+
+			<section class="blog">
+				<h2 class="visually-hidden">title</h2>
+				<div class="container">
+					<div class="blog__grid">
+						@@include('blocks/blog/blog-items.html')
+						@@include('blocks/blog/blog-aside.html')
+					</div>
+				</div>
+			</section>
 
 		</main>
 		@@include('blocks/footer.html')
