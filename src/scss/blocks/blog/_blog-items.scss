@@ -1,0 +1,37 @@
+.blog-item {
+    &__post {
+        margin-bottom: 70px;
+
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        padding-bottom: 24px;
+    }
+}
+
+
+.blog-item{
+    &-info {
+        margin-bottom: 9px;
+        &__date,
+        &__author,
+        &__theme {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 200%;
+            color: var(--text-muted);
+        }
+    }
+    &__title {
+        // font-family: var(--second-family);
+        // font-weight: 700;
+        // color: var(--color-scheme-dark-transparent);
+        @extend %title-font;
+        font-size: 24px;
+        line-height: 158%;
+
+        &-post {margin-bottom: 6px;}
+    }
+}

@@ -1,4 +1,5 @@
 .aside {
+    flex-shrink: 0;
     width: 350px;
 
     &__search {
@@ -103,7 +104,7 @@
 
     &-link {
         padding-inline: 16px;
-        border: 1px solid #45464780;
+        outline: 1px solid #45464780;
         border-radius: 14px;
         // width: 181px;
         height: 28px;
@@ -114,6 +115,17 @@
         line-height: 200%;
         text-align: center;
         color: #8f8d8d;
+
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+
+        &--active,
+        &:hover {
+            border: #ffee3580;
+            outline: #ffee3580;
+            background: #ffee3580;
+            color: var(--color-default);
+        }
 
     }
 }
