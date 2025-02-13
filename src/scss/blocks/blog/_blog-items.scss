@@ -8,6 +8,9 @@
         object-fit: cover;
         padding-bottom: 24px;
     }
+    &__quote {
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -33,5 +36,43 @@
         line-height: 158%;
 
         &-post {margin-bottom: 6px;}
+    }
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 169%;
+        color: var(--color-default);
+    }
+}
+
+.blog-item__popup {
+    margin-bottom: 50px;
+
+    &-link {
+        display: block;
+        position: relative;
+        margin-bottom: 25px;
+        height: 415px;
+
+        background-color:rgba(86, 86, 86, 0.5);
+        background-image: url('./../../../img/blog/video-overlay.jpg');
+        background-blend-mode: multiply;
+        background-position: center center; /* x y */
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+
+        &:hover {background-color: transparent;}
+
+        & img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+           
+        }
     }
 }
