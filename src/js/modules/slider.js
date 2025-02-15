@@ -15,6 +15,17 @@ function slickSlider() {
         // cssEase: "liner",
     });
 
+    $(".blog-item__slider").slick({
+        dots: true,
+        arrows: true,
+        fade: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        speed: 300,
+        // adaptiveHeight: true,
+    });
+
     $(".contact-slider").slick({
         dots: true,
         arrows: false,

@@ -46,6 +46,34 @@
     }
 }
 
+.blog-item__quote {
+    padding: 54px 64px;
+    background: #dfdfdf80;
+    text-align: center;
+    
+    &-text {
+        position: relative;
+        margin-bottom: 23px;
+        padding-bottom: 23px;
+
+        font-family: var(--font-family);
+        font-style: italic;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 158%;
+        color: var(--color-scheme-dark-transparent);
+
+        @include line
+    }
+    &-author {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 137%;
+        color: #363838e6;
+    }
+}
+
 .blog-item__popup {
     margin-bottom: 50px;
 
@@ -75,4 +103,60 @@
            
         }
     }
+}
+
+.blog-item {
+    &__slider {
+        position: relative;
+        max-width: 720px;
+
+        & .slick-arrow {
+            position: absolute;
+            content: "";
+
+            z-index: 5;
+            top: 32%;
+            transform: translate(-0%, -50%);
+
+            width: 30px;
+            height: 30px;
+            // border-radius: 50%;
+
+            // background-color: var(--bg-second);
+            // backdrop-filter: blur(5px);
+            background-position: center;
+            background-repeat: no-repeat;
+
+            padding: 0 10px;
+            font-size: 0;
+        }
+        & .slick-prev {
+            background-image: url('./../../../img/blog/prev-w.svg');
+            left: 16px;
+            
+        }
+        & .slick-next {
+            background-image: url('./../../../img/blog/next-w.svg');
+            right: 16px;
+        }
+    }
+
+    &__slide {
+        &-img {
+            // width: 720px;
+            height: 415px;
+            object-fit: cover;
+        }
+        &:first-child .slick-prev {background-image: url('./../../../img/blog/prev.svg');}
+    }
+}
+
+[data-slick-index="0"]  {
+    // background-color: red;
+    // background-image: url('./../../../img/blog/prev.svg');
+}
+
+.blog-item__slider .slide1 .slick-prev{
+    background-color: red;
+    // background-image: url('./../../../img/blog/prev.svg');
 }

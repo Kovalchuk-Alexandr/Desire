@@ -77,3 +77,8 @@ function initMap() {
 
 window.initMap = initMap;
 
+// const slide = document.querySelectorAll(".blog-item__slide:firstChild");
+
+// console.log(slide);
+
+
