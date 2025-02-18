@@ -22,9 +22,9 @@
 @font-face {
 	font-family: OpenSans;
 	font-display: swap;
-	src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
-	font-weight: 600;
-	font-style: normal;
+	src: url("../fonts/OpenSans-Light-Italic.woff2") format("woff2"), url("../fonts/OpenSans-Light-Italic.woff") format("woff");
+	font-weight: 300;
+	font-style: italic;
 }
 @font-face {
 	font-family: OpenSans;
@@ -36,7 +36,7 @@
 @font-face {
 	font-family: OpenSans;
 	font-display: swap;
-	src: url("../fonts/OpenSans-Light-Italic.woff2") format("woff2"), url("../fonts/OpenSans-Light-Italic.woff") format("woff");
-	font-weight: 300;
-	font-style: italic;
+	src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
 }

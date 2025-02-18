@@ -148,8 +148,9 @@ gulp.task('images:docs', function () {
         .pipe(
             gulp.src([
                 "./src/img/**/*.*",
-                 "!./src/img/**/*.{arj,zip}",
-                 "!./src/img/svgicons/**/*.*",
+                "!./src/img/**/*.{arj,zip}",
+                "!./src/img/svgicons/**/*.*",
+                "!./src/img/favicons/**/*.*",
             ])
         )
         .pipe(changed("./docs/img/"))
