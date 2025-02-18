@@ -4,6 +4,11 @@
             <li class="breadcrumbs__item">
                 <a class="breadcrumbs__link" href="./index.html">Home</a>
             </li>
+            @@if(context.activePageName === 'Single Post') {
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="./blog.html">Blog</a>
+            </li>
+            }
             <li class="breadcrumbs__item">
                 <a class="breadcrumbs__link" href="#!">@@activePageName</a>
             </li>

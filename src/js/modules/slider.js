@@ -2,8 +2,6 @@ import $ from "jquery";
 import "slick-carousel"
 
 function slickSlider() {
-    // console.log($(".hero__slider"));
-
     $(".hero__slider").slick({
         dots: true,
         arrows: false,
@@ -11,7 +9,7 @@ function slickSlider() {
         autoplay: true,
         autoplaySpeed: 4000,
         draggable: true,
-        speed: 2000
+        speed: 2000,
         // cssEase: "liner",
     });
 
@@ -35,10 +33,9 @@ function slickSlider() {
         // autoplay: true,
         // autoplaySpeed: 4000,
         draggable: true,
-        speed: 500
+        speed: 500,
         // cssEase: "liner",
     });
-
 }
 
 export default slickSlider;

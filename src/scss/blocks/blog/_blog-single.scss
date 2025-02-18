@@ -1,0 +1,25 @@
+.blog-item__quote-single {
+    padding: 40px 42px 29px;
+    background: transparent;
+    text-align: start;
+    
+    &-text {
+        position: relative;
+ 
+        @include line{
+            width: 177px;
+            left: 0;
+            transform: none;
+            background-color: #6d7278;
+        }
+    }
+    &-author {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 137%;
+        color: #363838e6;
+    }
+}
+
+.blog__tags-wrapper-single {gap: 24px;}
