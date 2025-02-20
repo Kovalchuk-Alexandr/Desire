@@ -1,13 +1,14 @@
 # Desire - GULP - mobile
 
-## Верстка шестистраничного сайта на Gulp сборке. HTML, SCSS, JS, slick-carousel slider, mixItUP. Мобильная адаптация.
+## Верстка шестистраничного сайта на Gulp сборке. HTML, SCSS, JS, slick-carousel slider, Fancybox, mixItUP. Мобильная адаптация.
 
 - HTML,
 - SCSS,
-- Gulp,
+- Gulp, file-include
 - JS,
 - Slick-carousel slider
 - mixItUP - манипуляция, фильтр, сортировка DOM
+- Fancybox
 - Мобильная адаптация
 
 Установить зависимости:

@@ -14,9 +14,6 @@
         border: 1px solid var(--bg-second);
         border-radius: 24px;
         resize: none;
-
-        &::placeholder {
-        }
     }
     &__message::placeholder,
     &__input::placeholder {
