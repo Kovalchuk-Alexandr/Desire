@@ -1,0 +1,48 @@
+.comment__list {
+    margin-bottom: 40px;
+    & li + li {margin-top: 1em;}
+}
+
+.comment__item {
+    display: flex;
+    justify-content: start;
+    gap: 13px;
+
+    &-img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        flex-shrink: 0;
+
+        overflow: hidden;
+        object-fit: cover;
+    }
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    &-user-name {
+        @extend %title-font;
+        font-size: 16px;
+        line-height: 144%;
+    }
+    &-btn-reply {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 200%;
+        text-align: right;
+        color: var(--text-muted);
+    }
+    &-user-date {
+        margin-bottom: 10px;
+
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 200%;
+        color: var(--color-inverse);
+    }
+}

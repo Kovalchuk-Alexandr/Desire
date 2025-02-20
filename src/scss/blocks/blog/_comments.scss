@@ -1,0 +1,9 @@
+.comments {
+    &__title {
+        margin-bottom: 12px;
+
+        @extend %title-font;
+        font-size: 20px;
+        line-height: 155%;
+    }
+}
