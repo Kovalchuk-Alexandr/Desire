@@ -10,10 +10,15 @@
 
 .menu {
 	padding-inline: 35px 60px;
+	@include mobileL {padding-inline: unset;}
+	@include mobileM {display: none;}
 
 	&__list {
 		display: flex;
 		gap: 80px;
+		@include mobile {
+			gap: 30px;
+		}
 	}
 
 	&__list-link {
@@ -43,7 +48,12 @@
 	 }
 }
 
-.logo {margin: 0 auto; flex-shrink: 0;}
+.logo {
+	margin: 0 auto;
+	padding-inline: 20px;
+	flex-shrink: 0;
+	@include mobileM {margin-inline: 0 auto;}
+}
 
 .header__nav {
 	@include tablet {

@@ -21,9 +21,9 @@
 	// 	padding: 0 30px;
 	// }
 
-	// @include mobile {
-	// 	padding: 0 15px;
-	// }
+	@include mobile {
+		padding: 0 15px;
+	}
 }
 
 .container-fluid {
