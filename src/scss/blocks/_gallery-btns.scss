@@ -5,4 +5,12 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
+    flex-wrap: wrap;
+}
+
+@include mobileM {
+    .gallery__buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
 }

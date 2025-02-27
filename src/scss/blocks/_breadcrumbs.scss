@@ -3,14 +3,20 @@
     background: #dfdfdf80;
 
     &__list {
+        // position: relative;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        // gap: 6px;
-        // &:last-child:hover  {cursor: none;}
+        overflow-x: auto;
     }
-    &__item + &__item::before {
-        content: "/";
+    &__item + &__item{
+        position: relative;
+        padding-left: 10px;
+        &::before {
+            position: absolute;
+            left: 0;
+            content: "/";
+        }
     }
 
     &__item:last-child &__link {cursor: default;}

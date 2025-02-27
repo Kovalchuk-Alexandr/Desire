@@ -86,8 +86,8 @@
 			transform: translate(-50%, 105%);
 
             width: 2px;
-			@content;
             height: 20px;
+			@content;
             background-color: var(--color-black-muted);
         }
 }

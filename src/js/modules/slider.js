@@ -6,7 +6,7 @@ function slickSlider() {
         dots: true,
         arrows: false,
         fade: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 4000,
         draggable: true,
         speed: 2000,

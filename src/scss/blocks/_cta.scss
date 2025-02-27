@@ -19,9 +19,9 @@
         padding-bottom: 22px;
         margin-bottom: 21px;
 
-        @extend %title-font;
         font-size: 60px;
         line-height: 133%;
+        @extend %title-font;
         color: var(--color-scheme-dark-transparent);
 
         @include line{
@@ -37,3 +37,50 @@
         color: var(--color-default);
     }
 }
+
+@include mobile {
+    .cta {
+        padding: 150px 0 80px;
+        margin-bottom: 49px;
+        min-height: 500px;
+
+        &__title {
+            padding-bottom: 18px;
+            margin-bottom: 16px;
+
+            font-size: 50px;
+            line-height: 120%;
+        }
+    }
+}
+
+@include mobileM {
+    .cta {
+        padding: 0;
+        height: 400px;
+        min-height: unset;
+        // margin-bottom: 49px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__title {font-size: 40px;}
+    }
+}
+
+@include mobileS {
+    .cta {
+        height: 330px;
+        margin-bottom: 30px;
+
+        &__title {
+            padding-bottom: 16px;
+            margin-bottom: 14px;
+
+            font-size: 32px;
+        }
+         &__text {font-size: 14px;}
+    }
+}
+
+

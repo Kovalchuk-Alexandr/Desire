@@ -26,6 +26,9 @@
         background: #ffee3580;
         color: var(--color-default);
     }
+    @include mobileM {width: 300px;}
+    @include mobileS {width: 90%;}
+    @media (max-width: 320px) {width: 100%; min-width: 190px;}
 }
 
 .btn {
