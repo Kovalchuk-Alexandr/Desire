@@ -17,3 +17,9 @@ iframe {
         &__list {justify-content: flex-end;}
     }
 }
+
+@include mobileM {
+    .contact-map {
+        margin-bottom: 30px;
+    }
+}

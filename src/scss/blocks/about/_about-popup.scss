@@ -1,7 +1,9 @@
 .about-popup {
     position: relative;
     margin-bottom: 98px;
+    margin-bottom: clamp(1.875rem, -1.011rem + 11.54vw, 6.125rem);
     height: 414px;
+    height: clamp(15rem, 7.615rem + 29.54vw, 25.875rem);
 
     background-image: url('./../../../img/about/popup.jpg');
     background-position: center center; /* x y */

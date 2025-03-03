@@ -6,6 +6,30 @@
         grid-template-columns: repeat(5, 1fr);
         align-items: center;
         justify-content: space-between;
-        gap: 30px;
+        gap: 10px 30px;
+    }
+}
+
+@include mobile {
+    .about-partners {
+    margin-bottom: 40px;
+
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px 20px;
+        }
+    }
+}
+
+@include mobileS {
+    .about-partners {
+    margin-bottom: 30px;
+
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px 20px;
+        }
     }
 }

@@ -1,6 +1,6 @@
 // Галерея и лайтбоксы от Fancybox
-import { Fancybox } from '@fancyapps/ui';
-import '@fancyapps/ui/dist/fancybox/fancybox.css';
+// import { Fancybox } from '@fancyapps/ui';
+// import '@fancyapps/ui/dist/fancybox/fancybox.css';
 
 // Проверка корректности установки Fancybox
 // const fancybox = document.querySelectorAll("[data-fancybox]");
@@ -8,12 +8,12 @@ import '@fancyapps/ui/dist/fancybox/fancybox.css';
 // console.log(fancybox);
 // console.log(Fancybox);
 
-Fancybox.bind('[data-fancybox]', {
-	// Your custom options
-});
+// Fancybox.bind('[data-fancybox]', {
+// 	// Your custom options
+// });
 
-import $ from "jquery";
-import "slick-carousel";
+import fancyboxFunc from "./fancy-box.js";
+fancyboxFunc();
 
 // Мобильная навигация
 import mobileNav from './modules/mobile-nav.js';
@@ -25,60 +25,10 @@ slickSlider();
 
 
 // mixItUP
-import mixitup from "mixitup";
+import mixitupFunc from "./modules/mixit-up.js";
+mixitupFunc();
 
-/*Creating a mixer instance with an element reference*/
-var containerEl = document.querySelector(".gallery__inner");
-
-if (containerEl) {
-    var mixer = mixitup(containerEl, {
-        classNames: {
-            block: "gallery", // название кастомного блока
-            elementFilter: "btn", // название кастомного элемента
-            delineatorElement: "__", // разделитель элемента
-            delineatorModifier: "--", // разделитель модификатора
-        },
-        load: {
-            filter: ".category-living", // активный таб при загрузке
-        },
-        // selectors: {
-        //     control: ".gallery__btn",
-        // },
-    });
-}
-// const menuListLink = document.querySelectorAll(".menu__list-link");
-// console.log("menuListLink: ");
-// console.log(menuListLink);
-// console.log(`URI: ${document.documentURI}`);
-// console.log(`URL: ${document.title}`);
-
-function initMap() {
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 20,
-        // 37.797822, -122.422611
-        center: { lat: 37.797822, lng: -122.422611 },
-        mapTypeControl: true,
-        mapTypeControlOptions: {
-            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-            position: google.maps.ControlPosition.TOP_CENTER,
-        },
-        zoomControl: true,
-        zoomControlOptions: {
-            position: google.maps.ControlPosition.LEFT_CENTER,
-        },
-        scaleControl: true,
-        streetViewControl: true,
-        streetViewControlOptions: {
-            position: google.maps.ControlPosition.LEFT_BOTTOM,
-        },
-        fullscreenControl: true,
-    });
-}
+import initMap from "./modules/map.js";
+initMap();
 
 window.initMap = initMap;
-
-// const slide = document.querySelectorAll(".blog-item__slide:firstChild");
-
-// console.log(slide);
-
-

@@ -2,8 +2,10 @@
 .about-header{
     position: relative;
     margin-bottom: 98px;
+    margin-bottom: clamp(1.875rem, -1.011rem + 11.54vw, 6.125rem);
 
     height: 400px;
+    height: clamp(15rem, 8.209rem + 27.16vw, 25rem);
 
     background-image: url('./../../../img/about/about-us-bg.jpg');
     background-position: center center; /* x y */
@@ -21,6 +23,7 @@
                 
         @extend %title-font;
         font-size: 60px;
+        font-size: clamp(2rem, 0.812rem + 4.75vw, 3.75rem);
         line-height: 133%;
     }
 }

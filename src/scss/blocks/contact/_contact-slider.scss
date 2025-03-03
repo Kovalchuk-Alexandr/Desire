@@ -1,4 +1,7 @@
-.section-contact-slider {margin-bottom: 100px;}
+.section-contact-slider {
+    margin-bottom: 100px;
+    margin-bottom: clamp(1.875rem, -1.096rem + 11.88vw, 6.25rem);
+}
 
 .contact-slider {
     & .slick-list {margin-bottom: 35px;}
@@ -25,6 +28,12 @@
 }
 
 .contact-slide {
-    width: 170px;
+    max-width: 170px;
     padding-inline: 8px;
+}
+
+@include tablet {
+    .contact-slider {
+       & .slick-list {margin-bottom: 20px;}
+    }
 }

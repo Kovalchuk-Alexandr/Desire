@@ -32,6 +32,10 @@
 
 	max-width: var(--container-width-fluid);
 	width: 100%;
+
+	@include mobile {
+		padding: 0 15px;
+	}
 }
 
 .container-center {margin: 0 auto;}
