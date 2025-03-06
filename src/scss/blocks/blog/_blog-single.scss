@@ -69,21 +69,42 @@
         }
 
         &-prev {
-            // padding-left: 33px;
             text-align: left;
             &::before {
+                padding-left: 5px;
                 left: 0;
                 background-image: url("./../../../img/blog/arrow-left-lg.svg");
             }
         }
         &-next {
-            // padding-right: 33px;
             flex-direction: row-reverse;
             text-align: right;
             &::before {
+                padding-right: 5px;
                 right: 0;
                 background-image: url("./../../../img/blog/arrow-right-lg.svg");
             }
+        }
+    }
+}
+
+@include mobileS {
+    .blog-single {
+        & .blog__tags {margin-bottom: 30px;}
+        & .blog__tags-wrapper {gap: 18px 20px;}
+
+        &__links {
+            margin-bottom: 30px;
+            padding-block: 30px 20px;
+            gap: 15px;
+        }
+        &__link {
+            position: relative;
+            width: 46%;
+            gap: 14px;
+            
+            font-size: 12px;
+            line-height: 1.5;
         }
     }
 }

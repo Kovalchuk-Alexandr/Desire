@@ -65,7 +65,7 @@ function slickSlider() {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    dots: false,
+                    // dots: false,
                 },
             },
             // {

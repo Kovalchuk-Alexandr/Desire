@@ -17,22 +17,24 @@
 
 
 .blog-item{
+    &__date,
+    &__author,
+    &__theme {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 200%;
+        color: var(--text-muted);
+    }
     &-info {
         margin-bottom: 9px;
-        &__date,
-        &__author,
-        &__theme {
-            font-family: var(--font-family);
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 200%;
-            color: var(--text-muted);
-        }
+        // font-family: var(--font-family);
+        // font-weight: 600;
+        // font-size: 14px;
+        // line-height: 200%;
+        // color: var(--text-muted);
     }
     &__title {
-        // font-family: var(--second-family);
-        // font-weight: 700;
-        // color: var(--color-scheme-dark-transparent);
         @extend %title-font;
         font-size: 24px;
         line-height: 158%;
@@ -104,5 +106,55 @@
             transform: translate(-50%, -50%);
            
         }
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .blog__items,
+    .blog-item__slider {max-width: 1100px; width: 100%;}
+    
+}
+
+@include mobile {
+    .blog-item {
+        &__post, &__quote, &__popup {margin-bottom: 40px;}
+    }
+}
+
+@include mobileM {
+    .blog-item__slide-img,
+    .blog-item__slider .slick-arrow {height: 350px;}
+}
+
+@include mobileS{
+    .blog-item {
+        &__img {padding-bottom: 18px;}
+        &__popup-link {margin-bottom: 16px; height: 240px;}
+        &__post, &__quote, &__popup {margin-bottom: 30px;}
+
+        &__date,
+        &__author,
+        &__theme {
+            // font-size: 12px;
+            line-height: 1.6;
+        }
+
+        &-info {margin-bottom: 6px;}
+        &__title {font-size: 20px; line-height: 1.42;}
+        &__text {font-size: 14px; line-height: 1.5;}
+
+        &__quote {
+            padding: 30px;
+            &-text {
+                margin-bottom: 14px;
+                padding-bottom: 16px;
+                font-size: 20px;
+                line-height: 1.42;
+            }
+            &-author {font-size: 14px;}
+        }
+        &__slide-img,
+        &__slider .slick-arrow {height: 240px;}
     }
 }

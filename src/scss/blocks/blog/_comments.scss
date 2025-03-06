@@ -7,3 +7,14 @@
         line-height: 155%;
     }
 }
+
+@include mobileS {
+    .comments {
+        &__title {
+            margin-bottom: 8px;
+
+            font-size: 18px;
+            line-height: 1.4;
+        }
+    }
+}

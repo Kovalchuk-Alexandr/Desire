@@ -100,3 +100,15 @@
     &__arrow--disabled {display: none;}
     
 }
+
+@include mobileM {
+    .blog-item__slider .slick-dots {
+        margin-top: 20px;
+    }
+}
+
+@include mobileS {
+    .blog-item__slider .slick-dots {
+        margin-top: 5px;
+    }
+}

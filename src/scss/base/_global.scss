@@ -35,7 +35,7 @@ body {
 	}
 
 	@include mobileM {gap: 20px;}
-	// @include mobileS {display: none !important;}
+	@include mobileS {gap: 10px;}
 }
 
 li.slick-active {
